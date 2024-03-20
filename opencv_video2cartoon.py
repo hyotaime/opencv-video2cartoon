@@ -12,7 +12,7 @@ def cartoonize_frame(frame, k):
     return cartoon_frame
 
 
-cap = cv2.VideoCapture('../data/PETS09-S2L1-raw.webm')
+cap = cv2.VideoCapture('./PETS09-S2L1-raw.webm')
 
 fourcc = cv2.VideoWriter.fourcc(*'XVID')
 out = cv2.VideoWriter('cartoonized_video.avi', fourcc, 20.0, (int(cap.get(3)), int(cap.get(4))))
